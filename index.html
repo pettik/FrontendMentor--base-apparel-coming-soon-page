@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Petr Bednarski">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Petr Bednarski" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="background-template"></div>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="Logo image" class="logo" />
+      </header>
+      <div class="hero">
+        <picture class="hero-image">
+          <source media="(min-width:990px)" srcset="images/hero-desktop.jpg" />
+          <img src="images/hero-mobile.jpg" alt="hero image" />
+        </picture>
+      </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="assets/style.css">
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
-
- 
-</head>
-<body>
-
-  <div class="background-template"></div>
-  <div class="container">
-    <header>
-      <img src="images/logo.svg" alt="Logo image" class="logo">
-    </header>
-    <div class="hero">
-      <picture class="hero-image">
-        <source media="(min-width:768px)" srcset="images/hero-desktop.jpg" />
-        <img src="images/hero-mobile.jpg" alt="hero image"/>
-      </picture>
+      <div class="data-area">
+        <h1>
+          <span>We're</span>coming<br />
+          soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div class="input-area">
+          <input type="text" placeholder="Email Address" />
+          <button type="submit">
+            <ion-icon name="chevron-forward-outline" class="iconka"></ion-icon>
+          </button>
+        </div>
+      </div>
     </div>
-  
-    <div class="data-area">
-      <h1><span>We're</span>coming<br/> soon</h1>
-<p> Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.</p>
-  <div class="input-area">
-    <input type="text" placeholder="Email Address">
-    <button type="submit"><ion-icon name="chevron-forward-outline" class="iconka"></ion-icon></button>
-  </div>
-    </div>
-  </div>
 
-  
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="assets/script.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/script.js"></script>
+  </body>
 </html>

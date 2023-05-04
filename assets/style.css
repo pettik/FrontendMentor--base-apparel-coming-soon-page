@@ -97,17 +97,21 @@ img {
   width: 320px;
   height: 50px;
   margin: 0 auto;
+  /* opacity: 0.4; */
 }
 .input-area input {
   justify-content: center;
   height: 100%;
   width: 100%;
   border-radius: 2rem;
+  border: 2px solid var(--desaturated-red);
   outline: none;
   padding: 0 2rem;
 }
+
 .input-area button {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: absolute;
   top: 50%;
@@ -117,8 +121,11 @@ img {
   border-radius: 2rem;
   outline: none;
   border: 0;
+  width: 5rem;
 }
 
 .iconka {
   padding: 0 1rem;
+  font-size: 1.8rem;
+  color: #fff;
 }
