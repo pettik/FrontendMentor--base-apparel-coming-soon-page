@@ -40,6 +40,7 @@ body {
   height: 800px;
   margin: 0 auto;
   z-index: -1;
+  display: none;
 }
 
 img {
@@ -94,7 +95,7 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 318px;
   height: 50px;
   margin: 0 auto;
   /* opacity: 0.4; */
@@ -107,6 +108,14 @@ img {
   border: 2px solid var(--desaturated-red);
   outline: none;
   padding: 0 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: var(--desaturated-red);
+}
+
+.input-area input::placeholder {
+  color: var(--desaturated-red);
 }
 
 .input-area button {
@@ -114,6 +123,7 @@ img {
   justify-content: center;
   align-items: center;
   position: absolute;
+  cursor: pointer;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -121,11 +131,19 @@ img {
   border-radius: 2rem;
   outline: none;
   border: 0;
-  width: 5rem;
+  width: 4.25rem;
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15);
+  background: var(--linear-second);
 }
 
 .iconka {
   padding: 0 1rem;
   font-size: 1.8rem;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .input-area button:hover {
+    filter: brightness(1.25);
+  }
 }
