@@ -188,4 +188,7 @@ img {
   .input-area button:hover {
     filter: brightness(1.25);
   }
+  
+  .container{
+  width:100%;}
 }
