@@ -40,7 +40,7 @@ body {
   height: 800px;
   margin: 0 auto;
   z-index: -1;
-  /* display: none; */
+  display: none;
 }
 
 img {
@@ -192,7 +192,7 @@ header {
   border: 2px solid #fa6566;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .background-template {
     background: url('../design/desktop-design.jpg');
     background-size: cover;
@@ -220,34 +220,95 @@ header {
     grid-template-columns: 1fr 0.74fr;
     position: relative;
   }
-  /*
-  .container > * {
-    border: 3px solid blue;
-  } */
+
+  header,
+  .data-area {
+    margin-left: 14.5rem;
+  }
 
   header {
     grid-area: 'header';
-    margin: 3.5rem 0 0 12rem;
+    margin-top: 3.5rem;
   }
 
   .logo {
-    width: 300px;
-    padding-left: 2.2rem;
+    width: 260px;
+    padding-left: 0;
   }
 
   .data-area {
     grid-area: 'data-area';
+    text-align: left;
+    padding-top: 2rem;
   }
 
-  .data-area {
-    text-align: left;
-    margin-left: 12rem;
+  .data-area h1 {
+    font-size: 6.5rem;
+    line-height: 1;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1.4rem;
+  }
+
+  .data-area .description {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    padding: 0 20rem 0 0;
+    margin-bottom: 3.8rem;
+  }
+
+  .input-area {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 39.375rem;
+    height: 75px;
+    margin: 0;
+  }
+
+  .input-area input {
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    padding: 0 2.5rem;
+    font-weight: 400;
+  }
+
+  .exclamation-mark {
+    font-weight: 600;
+    font-size: 1.4rem;
+    right: 9.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .data-area .error-message {
+    top: 4rem;
+    left: 0;
+    color: var(--soft-red);
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .input-area button {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    border-radius: 5rem;
+
+    width: 8.5rem;
   }
 
   .hero-image {
     grid-area: 'hero-image';
-    width: 40vw;
-    height: 200px;
+
+    height: 100px;
+  }
+
+  .iconka {
+    font-size: 2.5rem;
   }
 
   .hero-image img {
