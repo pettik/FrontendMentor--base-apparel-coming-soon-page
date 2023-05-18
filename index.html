@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" role="website">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Petr Bednarski" />
@@ -23,16 +23,16 @@
       </header>
 
       <div class="data-area">
-        <h1>
+        <h1 role="main-title">
           <span>We're</span>coming<br />
           soon
         </h1>
-        <p class="description">
+        <p class="description" role="contentinfo">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <div class="input-area">
+        <div class="input-area" role="user-input">
           <div class="exclamation-mark">!</div>
           <input
             type="text"
@@ -40,7 +40,7 @@
             name="inputText"
             placeholder="Email Address"
           />
-          <button type="submit" id="btn">
+          <button type="submit" id="btn" aria-label="submit-button">
             <ion-icon name="chevron-forward-outline" class="iconka"></ion-icon>
           </button>
           <p class="error-message">Please provide a valid email</p>

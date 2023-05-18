@@ -40,7 +40,7 @@ body {
   height: 800px;
   margin: 0 auto;
   z-index: -1;
-  /* display: none; */
+  display: none;
 }
 
 img {
@@ -429,7 +429,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
   .background-template {
     background: url('../design/desktop-design.jpg');
     background-size: cover;
@@ -553,4 +553,4 @@ header {
     width: 100%;
     /* opacity: 0.2; */
   }
-}
+} */
