@@ -313,15 +313,6 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  .background-template {
-    background: url('../design/desktop-design.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100vh;
-  }
-
   .input-area button:hover {
     filter: brightness(1.25);
   }
@@ -417,7 +408,7 @@ header {
     height: 100%;
     border-radius: 5rem;
     width: 6rem;
-    opacity: 0.2;
+    /* opacity: 0.2; */
   }
 
   .hero-image {
@@ -429,6 +420,132 @@ header {
 
   .iconka {
     font-size: 2rem;
+  }
+
+  .hero-image img {
+    height: auto;
+    width: 100%;
+    /* opacity: 0.2; */
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .background-template {
+    background: url('../design/desktop-design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .input-area button:hover {
+    filter: brightness(1.25);
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 58% 42%;
+    position: relative;
+  }
+
+  header,
+  .data-area {
+    margin-left: 14.5rem;
+  }
+
+  header {
+    margin-top: 4rem;
+  }
+
+  .logo {
+    width: 255px;
+    padding-left: 0;
+  }
+
+  .data-area {
+    text-align: left;
+    padding-top: 10rem;
+    padding-left: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .data-area h1 {
+    font-size: 6.3rem;
+    line-height: 1;
+    letter-spacing: 16px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .data-area .description {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    padding: 0 19rem 0 0;
+    margin-bottom: 3.7rem;
+  }
+
+  .input-area {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 39.5rem;
+    height: 80px;
+    margin: 0;
+  }
+
+  .input-area input {
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    padding: 0 2.5rem;
+    font-weight: 400;
+  }
+
+  .exclamation-mark {
+    font-weight: 600;
+    font-size: 1.4rem;
+    right: 9.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .data-area .error-message {
+    top: 4rem;
+    left: 0;
+    color: var(--soft-red);
+    font-size: 1.3rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .input-area button {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    border-radius: 5rem;
+    width: 8.5rem;
+    /* opacity: 0.2; */
+  }
+
+  .hero-image {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .iconka {
+    font-size: 3rem;
   }
 
   .hero-image img {
